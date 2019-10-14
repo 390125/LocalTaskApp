@@ -1,4 +1,4 @@
-package com.saku39.localtaskapp.ui.dashboard
+package com.saku39.localtaskapp.ui.setting
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.saku39.localtaskapp.R
 
-class DashboardFragment : Fragment() {
+class SettingFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var settingViewModel: SettingViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-            ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(this, Observer {
+        settingViewModel =
+            ViewModelProviders.of(this).get(SettingViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_setting, container, false)
+        val textView: TextView = root.findViewById(R.id.text_setting)
+        settingViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root
