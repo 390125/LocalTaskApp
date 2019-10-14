@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LocalTaskApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">ホーム</string>
+    <string name="title_folder">フォルダ</string>
+    <string name="title_search">検索</string>
+    <string name="title_setting">設定</string>
 </resources>
